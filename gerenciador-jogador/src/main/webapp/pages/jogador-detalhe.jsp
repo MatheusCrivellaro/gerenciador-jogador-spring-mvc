@@ -90,7 +90,7 @@
 
             <hr>
 
-            <a class="btn btn-primary btn-lg" href="${contextPath}/jogador">Voltar</a>
+            <a class="btn btn-primary btn-lg" href="../jogador">Voltar</a>
 
           </div>
         </div>

@@ -92,7 +92,6 @@ body {
 				<label for="time" class="form-label">Time</label> <select
 					class="form-select" aria-label="Default select example" name="time"
 					id="time">
-					<option selected>Selecionar</option>
 					<c:forEach items="${times}" var="time">
 						<option value="${time}">${time.nome}</option>
 					</c:forEach>

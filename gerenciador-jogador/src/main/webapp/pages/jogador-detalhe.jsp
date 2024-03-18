@@ -1,79 +1,105 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogador</title>
+  <!-- Adicione o link para o Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados para a paleta de cores preta e rosa */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
 
-<title>Jogador - Detalhe</title>
+    .navbar {
+      background-color: #000 !important;
+    }
 
-<c:set value="${pageContext.request.contextPath}" var="contextPath" />
+    .navbar-brand {
+      color: #ed145b !important; /* Rosa */
+    }
 
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-	crossorigin="anonymous">
+    .btn-primary {
+      background-color: #ed145b !important; /* Rosa */
+      border-color: #ed145b !important;
+    }
 
+    .btn-primary:hover {
+      background-color: #d6346c !important; /* Rosa mais escuro */
+      border-color: #d6346c !important;
+    }
+
+    .card {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .form-control-static {
+      color: #ed145b; /* Rosa */
+    }
+  </style>
 </head>
-
 <body>
 
-	<nav class="navbar bg-body-tertiary">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="${contextPath}/jogador">Gerenciador</a>
-		</div>
-	</nav>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gerenciador</a>
+    </div>
+  </nav>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="well">
+  <!-- Conteúdo principal -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
 
-					<h2>Jogador</h2>
+            <h2 class="card-title">Jogador</h2>
 
-					<div class="form-group">
-						<label class="control-label" for="nome">Nome:</label> <b>${jogador.nome}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">N�mero:</label> <b>${jogador.numero}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">Posi��o:</label> <b>${jogador.posicao}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">Time:</label> <b>${jogador.time}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">Altura:</label> <b>${jogador.altura}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">Dominante:</label> <b>${jogador.dominante}</b>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="nome">Data de
-							Nascimento:</label> <b>${jogador.data}</b>
-					</div>
+            <div class="form-group">
+              <label class="control-label">Nome:</label>
+              <p class="form-control-static">${jogador.nome}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Número:</label>
+              <p class="form-control-static">${jogador.numero}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Posição:</label>
+              <p class="form-control-static">${jogador.posicao}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Time:</label>
+              <p class="form-control-static">${jogador.time}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Altura:</label>
+              <p class="form-control-static">${jogador.altura}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Dominante:</label>
+              <p class="form-control-static">${jogador.dominante}</p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Data de Nascimento:</label>
+              <p class="form-control-static">${jogador.data}</p>
+            </div>
 
-					<hr>
+            <hr>
 
-					<a class="btn btn-default btn-lg btn-primary" href="${contextPath}/jogador">Voltar</a>
+            <a class="btn btn-primary btn-lg" href="${contextPath}/jogador">Voltar</a>
 
-					<br> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- jQuery -->
-	<script src="${js}/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="${js}/bootstrap.min.js"></script>
+  <!-- Adicione o link para o Bootstrap JS, se necessário -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 </body>
 </html>

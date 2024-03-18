@@ -8,7 +8,7 @@
 
 <head>
 
-<title>jogadors - Listagem</title>
+<title>jogadores - Listagem</title>
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
 
@@ -18,10 +18,43 @@
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 	crossorigin="anonymous">
 
+<style>
+    /* Estilos personalizados */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #222 !important;
+    }
+    .card {
+      background-color: #222;
+      color: #fff;
+      border-color: #ed145b;
+    }
+    .card-title {
+      color: #ed145b;
+    }
+    .card-subtitle {
+      color: #fff;
+    }
+    .btn-primary {
+      background-color: #ed145b;
+      border-color: #ed145b;
+    }
+    .btn-primary:hover {
+      background-color: #ed145b;
+      border-color: #ed145b;
+    }
+    .navbar-brand{
+        color: #ed145b;
+    }
+</style>
+
 </head>
 <body>
 
-	<nav class="navbar bg-body-tertiary">
+	<nav class="navbar">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="${contextPath}/jogador">Gerenciador</a>
 		</div>
@@ -47,8 +80,8 @@
 						<div class="card-body">
 							<h5 class="card-title">${jogador.nome}</h5>
 							<h6 class="card-subtitle mb-2 text-body-secondary">${jogador.time.nome}</h6>
-							<p class="m-0">Posição: ${jogador.posicao.nome}</p>
-							<p class="m-0">Número: ${jogador.numero}</p>
+							<p class="m-0">PosiÃ§Ã£o: ${jogador.posicao.nome}</p>
+							<p class="m-0">NÃºmero: ${jogador.numero}</p>
 							<p class="m-0">Altura: ${jogador.altura}</p>
 							<div class="d-flex justify-content-center">
 								<button type="button" class="btn px-2 btn-primary btn-sm"><a href="jogador/deletar/${jogador.id}" class=" text-decoration-none text-white">Deletar</a></button>
@@ -65,4 +98,3 @@
 
 </body>
 </html>
-

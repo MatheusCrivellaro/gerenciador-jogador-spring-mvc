@@ -80,14 +80,14 @@ body {
 				<div class="row d-flex justify-content-center">
 					<c:forEach items="${jogadores}" var="jogador">
 						<div
-							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-3 bg-dark"
+							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-3 bg-dark pt-3 px-4"
 							style="width: 18rem;">
 							<ul class="list-group list-group-flush">
 								<h5 class="card-title">${jogador.nome}</h5>
 								<h6 class="card-subtitle mb-2 text-light">${jogador.time.nome}</h6>
-								<li class="list-group-item bg-dark border-secondary text-white">Posição:
+								<li class="list-group-item bg-dark border-secondary text-white">PosiÃ§Ã£o:
 									${jogador.posicao.nome}</li>
-								<li class="list-group-item bg-dark border-secondary text-white">Número:
+								<li class="list-group-item bg-dark border-secondary text-white">NÃºmero:
 									${jogador.numero}</li>
 								<li class="list-group-item bg-dark border-secondary text-white">Altura:
 									${jogador.altura}</li>

@@ -10,8 +10,6 @@
 
 <title>jogadores - Listagem</title>
 
-<c:set value="${pageContext.request.contextPath}" var="contextPath" />
-
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -19,78 +17,91 @@
 	crossorigin="anonymous">
 
 <style>
-    /* Estilos personalizados */
-    body {
-      background-color: #000;
-      color: #fff;
-    }
-    .navbar {
-      background-color: #222 !important;
-    }
-    .card {
-      background-color: #222;
-      color: #fff;
-      border-color: #ed145b;
-    }
-    .card-title {
-      color: #ed145b;
-    }
-    .card-subtitle {
-      color: #fff;
-    }
-    .btn-primary {
-      background-color: #ed145b;
-      border-color: #ed145b;
-    }
-    .btn-primary:hover {
-      background-color: #ed145b;
-      border-color: #ed145b;
-    }
-    .navbar-brand{
-        color: #ed145b;
-    }
+/* Estilos personalizados */
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+.card {
+	background-color: #222;
+	color: #fff;
+	border-color: #ed145b;
+}
+
+.card-title {
+	color: #ed145b;
+}
+
+.card-subtitle {
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: #ed145b;
+	border-color: #ed145b;
+}
+
+.btn-primary:hover {
+	color: #ed145b !important;
+	background-color: #000 !important;
+	border-color: #ed145b !important;
+}
+
+.navbar-brand {
+	color: #ed145b;
+}
 </style>
 
 </head>
 <body>
 
-	<nav class="navbar">
+	<nav class="navbar bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="${contextPath}/jogador">Gerenciador</a>
+			<a class="navbar-brand fw-semibold ms-3"
+				href="${contextPath}/jogador">Gerenciador</a>
 		</div>
 	</nav>
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-
-				<h1>jogadores</h1>
+				<div class="text-center m-4">
+					<h1>Jogadores</h1>
+				</div>
 
 				<p class="toolbar">
-
-					<a class="create btn btn-default text-white btn-primary" href="jogador/novojogador">Novo jogador</a>
-
-					<span class="alert"></span>
-				</p>
-				<div>
+				<div class="row d-flex justify-content-center">
+					<a class="create btn col-10 text-white btn-primary m-3 py-2s"
+						href="jogador/novojogador">Novo jogador</a>
 				</div>
+				</p>
+				<div></div>
 				<div class="row d-flex justify-content-center">
 					<c:forEach items="${jogadores}" var="jogador">
-					<div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2" style="width: 18rem;">
-						<div class="card-body">
-							<h5 class="card-title">${jogador.nome}</h5>
-							<h6 class="card-subtitle mb-2 text-body-secondary">${jogador.time.nome}</h6>
-							<p class="m-0">PosiÃ§Ã£o: ${jogador.posicao.nome}</p>
-							<p class="m-0">NÃºmero: ${jogador.numero}</p>
-							<p class="m-0">Altura: ${jogador.altura}</p>
-							<div class="d-flex justify-content-center">
-								<button type="button" class="btn px-2 btn-primary btn-sm"><a href="jogador/deletar/${jogador.id}" class=" text-decoration-none text-white">Deletar</a></button>
-								<button type="button" class="btn mx-2 btn-primary btn-sm"><a href="jogador/${jogador.id}" class="text-decoration-none text-white">Visualizar</a></button>
-								<button type="button" class="btn btn-primary btn-sm"><a href="jogador/atualizajogador/${jogador.id}" class="text-decoration-none text-white">Editar</a></button>
-							</div>
+						<div
+							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-3 bg-dark"
+							style="width: 18rem;">
+							<ul class="list-group list-group-flush">
+								<h5 class="card-title">${jogador.nome}</h5>
+								<h6 class="card-subtitle mb-2 text-light">${jogador.time.nome}</h6>
+								<li class="list-group-item bg-dark border-secondary text-white">Posição:
+									${jogador.posicao.nome}</li>
+								<li class="list-group-item bg-dark border-secondary text-white">Número:
+									${jogador.numero}</li>
+								<li class="list-group-item bg-dark border-secondary text-white">Altura:
+									${jogador.altura}</li>
+								<div class="d-flex justify-content-center my-3">
+									<a class="btn text-white btn-primary"
+										href="jogador/deletar/${jogador.id}">Deletar</a>
+									<a class="btn text-white btn-primary mx-2"
+										href="jogador/${jogador.id}">Visualizar</a>
+									<a class="btn text-white btn-primary"
+										href="jogador/atualizajogador/${jogador.id}">Editar</a>
+								</div>
+							</ul>
 						</div>
-					</div>
-				</c:forEach>
+					</c:forEach>
 				</div>
 			</div>
 		</div>

@@ -17,7 +17,7 @@ public class JogadorRepository {
 
 	public JogadorRepository() {
 		lista = new ArrayList<>();
-		new JogadorService().mock(this);
+		JogadorService.mock(this);
 	}
 
 	public List<Jogador> findAll() {

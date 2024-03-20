@@ -54,6 +54,7 @@ body {
 
 .titulo-jogadores {
 	font-size: 6.5vh;
+	text-shadow: #ed145b 3px 3px 0px;
 }
 
 </style>

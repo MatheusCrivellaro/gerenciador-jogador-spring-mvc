@@ -51,6 +51,11 @@ body {
 .navbar-brand {
 	color: #ed145b;
 }
+
+.titulo-jogadores {
+	font-size: 6.5vh;
+}
+
 </style>
 
 </head>
@@ -67,12 +72,12 @@ body {
 		<div class="row">
 			<div class="col-md-12">
 				<div class="text-center m-4">
-					<h1>Jogadores</h1>
+					<h1 class="titulo-jogadores">Jogadores</h1>
 				</div>
 
 				<p class="toolbar">
 				<div class="row d-flex justify-content-center">
-					<a class="create btn col-10 text-white btn-primary m-3 py-2s"
+					<a class="create btn col-10 text-white btn-primary m-3 py-2"
 						href="jogador/novojogador">Novo jogador</a>
 				</div>
 				</p>
@@ -80,11 +85,11 @@ body {
 				<div class="row d-flex justify-content-center">
 					<c:forEach items="${jogadores}" var="jogador">
 						<div
-							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-3 bg-dark pt-3 px-4"
+							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-1 bg-dark pt-3 px-4"
 							style="width: 18rem;">
 							<ul class="list-group list-group-flush">
-								<h5 class="card-title">${jogador.nome}</h5>
-								<h6 class="card-subtitle mb-2 text-light">${jogador.time.nome}</h6>
+								<h5 class="card-title text-center">${jogador.nome}</h5>
+								<h6 class="card-subtitle mb-2 text-light text-center">${jogador.time.nome}</h6>
 								<li class="list-group-item bg-dark border-secondary text-white">Posição:
 									${jogador.posicao.nome}</li>
 								<li class="list-group-item bg-dark border-secondary text-white">Número:

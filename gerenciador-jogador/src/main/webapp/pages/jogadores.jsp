@@ -85,7 +85,7 @@ body {
 				<div class="row d-flex justify-content-center">
 					<c:forEach items="${jogadores}" var="jogador">
 						<div
-							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-1 bg-dark pt-3 px-4"
+							class="card col-12 col-sm-6 col-md-4 col-lg-3 m-2 border-0 bg-dark pt-3 px-4"
 							style="width: 18rem;">
 							<ul class="list-group list-group-flush">
 								<h5 class="card-title text-center">${jogador.nome}</h5>

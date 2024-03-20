@@ -60,7 +60,7 @@
 <body>
 	<nav class="navbar">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="${contextPath}/jogador">Gerenciador</a>
+			<a class="navbar-brand fw-semibold mx-3 my-1" href="/gerenciador/jogador">Gerenciador</a>
 		</div>
 	</nav>
 	<div class="m-5">

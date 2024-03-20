@@ -50,7 +50,7 @@ body {
 	<!-- Barra de navegação -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
-			<a class="navbar-brand fw-bold mx-3 my-2" href="../jogador">Gerenciador</a>
+			<a class="navbar-brand fw-semibold mx-3 my-1" href="../jogador">Gerenciador</a>
 		</div>
 	</nav>
 

@@ -65,7 +65,7 @@ body {
 	<!-- Barra de navegaÃ§Ã£o -->
 	<nav class="navbar bg-black">
 		<div class="container-fluid">
-			<a class="navbar-brand fw-bold mx-3 mt-2" href="../jogador">Gerenciador</a>
+			<a class="navbar-brand fw-semibold mx-3 my-1" href="/gerenciador/jogador">Gerenciador</a>
 		</div>
 	</nav>
 

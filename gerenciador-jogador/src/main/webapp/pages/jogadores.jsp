@@ -63,8 +63,8 @@ body {
 
 	<nav class="navbar bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand fw-semibold ms-3"
-				href="${contextPath}/jogador">Gerenciador</a>
+			<a class="navbar-brand fw-semibold mx-3 my-1"
+				href="/gerenciador/jogador">Gerenciador</a>
 		</div>
 	</nav>
 
@@ -90,9 +90,9 @@ body {
 							<ul class="list-group list-group-flush">
 								<h5 class="card-title text-center">${jogador.nome}</h5>
 								<h6 class="card-subtitle mb-2 text-light text-center">${jogador.time.nome}</h6>
-								<li class="list-group-item bg-dark border-secondary text-white">PosiÃ§Ã£o:
+								<li class="list-group-item bg-dark border-secondary text-white">Posição:
 									${jogador.posicao.nome}</li>
-								<li class="list-group-item bg-dark border-secondary text-white">NÃºmero:
+								<li class="list-group-item bg-dark border-secondary text-white">Número:
 									${jogador.numero}</li>
 								<li class="list-group-item bg-dark border-secondary text-white">Altura:
 									${jogador.altura}</li>

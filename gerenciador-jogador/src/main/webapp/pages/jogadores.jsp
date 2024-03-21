@@ -101,7 +101,7 @@ body {
 									<a class="btn text-white btn-primary"
 										href="jogador/deletar/${jogador.id}">Deletar</a>
 									<a class="btn text-white btn-primary mx-2"
-										href="jogador/visualizar/${jogador.id}">Visualizar</a>
+										href="jogador/${jogador.id}">Visualizar</a>
 									<a class="btn text-white btn-primary"
 										href="jogador/atualizajogador/${jogador.id}">Editar</a>
 								</div>

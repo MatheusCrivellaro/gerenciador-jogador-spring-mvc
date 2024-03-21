@@ -4,10 +4,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>jogadores - Listagem</title>
 
@@ -102,7 +101,7 @@ body {
 									<a class="btn text-white btn-primary"
 										href="jogador/deletar/${jogador.id}">Deletar</a>
 									<a class="btn text-white btn-primary mx-2"
-										href="jogador/${jogador.id}">Visualizar</a>
+										href="jogador/visualizar/${jogador.id}">Visualizar</a>
 									<a class="btn text-white btn-primary"
 										href="jogador/atualizajogador/${jogador.id}">Editar</a>
 								</div>

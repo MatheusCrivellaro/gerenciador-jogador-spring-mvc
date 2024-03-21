@@ -47,14 +47,14 @@ body {
 </head>
 <body>
 
-	<!-- Barra de navegação -->
+	<!-- Barra de navegaÃ§Ã£o -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container-fluid">
 			<a class="navbar-brand fw-semibold mx-3 my-1" href="../jogador">Gerenciador</a>
 		</div>
 	</nav>
 
-	<!-- Conteúdo principal -->
+	<!-- ConteÃºdo principal -->
 	<div class="container mt-4">
 		<div class="row d-flex justify-content-center">
 			<div class="col-lg-9">
@@ -66,11 +66,11 @@ body {
 						<div class="card m-2 border-0 bg-dark col-12" style="width: 18rem;">
 							<ul class="list-group list-group-flush">
 								<li class="list-group-item bg-dark border-secondary text-light">Nome: <span class="cor-principal">${jogador.nome}</span></li>
-								<li class="list-group-item bg-dark border-secondary text-light">N�mero: <span class="cor-principal">${jogador.numero}</span></li>
-								<li class="list-group-item bg-dark border-secondary text-light">Posi��o: <span class="cor-principal">${jogador.posicao.nome}</span></li>
+								<li class="list-group-item bg-dark border-secondary text-light">Número: <span class="cor-principal">${jogador.numero}</span></li>
+								<li class="list-group-item bg-dark border-secondary text-light">Posição: <span class="cor-principal">${jogador.posicao.nome}</span></li>
 								<li class="list-group-item bg-dark border-secondary text-light">Time: <span class="cor-principal">${jogador.time.nome}</span></li>
 								<li class="list-group-item bg-dark border-secondary text-light">Altura: <span class="cor-principal">${jogador.altura}</span></li>
-								<li class="list-group-item bg-dark border-secondary text-light">P� Dominante: <span class="cor-principal">${jogador.dominante}</span></li>
+								<li class="list-group-item bg-dark border-secondary text-light">Pé Dominante: <span class="cor-principal">${jogador.dominante.nome}</span></li>
 								<li class="list-group-item bg-dark border-secondary text-light">Data de Nascimento: <span class="cor-principal">${jogador.data}</span></li>
 							</ul>
 						</div>
@@ -85,7 +85,7 @@ body {
 		</div>
 	</div>
 
-	<!-- Adicione o link para o Bootstrap JS, se necessário -->
+	<!-- Adicione o link para o Bootstrap JS, se necessÃ¡rio -->
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 </body>

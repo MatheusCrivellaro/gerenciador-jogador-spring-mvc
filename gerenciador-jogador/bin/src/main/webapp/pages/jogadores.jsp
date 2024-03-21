@@ -91,9 +91,9 @@ body {
 							<ul class="list-group list-group-flush">
 								<h5 class="card-title text-center">${jogador.nome}</h5>
 								<h6 class="card-subtitle mb-2 text-light text-center">${jogador.time.nome}</h6>
-								<li class="list-group-item bg-dark border-secondary text-white">Posição:
+								<li class="list-group-item bg-dark border-secondary text-white">PosiÃ§Ã£o:
 									${jogador.posicao.nome}</li>
-								<li class="list-group-item bg-dark border-secondary text-white">Número:
+								<li class="list-group-item bg-dark border-secondary text-white">NÃºmero:
 									${jogador.numero}</li>
 								<li class="list-group-item bg-dark border-secondary text-white">Altura:
 									${jogador.altura}</li>

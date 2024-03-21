@@ -19,9 +19,4 @@ public class JogadorService {
 		repository.save(new Jogador(5, "Ana Luisa", Posicao.ATACANTE, Time.FLUMINENSE, 170.0, Dominante.ESQUERDO, LocalDate.now().toString()));
 	}
 	
-	public static String dataFormatter(String data) {
-		String[] lista = data.split("-");
-		return lista[2] + "/" + lista[1] + "/" + lista[0];
-	}
-	
 }

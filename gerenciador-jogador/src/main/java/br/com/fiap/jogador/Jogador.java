@@ -20,11 +20,11 @@ public class Jogador {
         this.time = time;
         this.altura = altura;
         this.dominante = dominante;
-        this.data = JogadorService.dataFormatter(data);
+        this.data =data;
     }
     
     public Jogador(Long id, int numero, String nome, Posicao posicao, Time time, Double altura, Dominante dominante, String data) {
-        this(numero, nome, posicao, time, altura, dominante, JogadorService.dataFormatter(data));
+        this(numero, nome, posicao, time, altura, dominante, data);
     	this.id = id;
     }
 
@@ -35,7 +35,7 @@ public class Jogador {
     	setAltura(dados.getAltura());
     	setNome(dados.getNome());
     	setNumero(dados.getNumero());
-    	setData(JogadorService.dataFormatter(dados.getData()));
+    	setData(dados.getData());
     	if(dados.getDominante()!=null)
     		setDominante(dados.getDominante());
     	if(dados.getTime()!=null)

@@ -64,7 +64,7 @@ public class JogadorController {
     	return "redirect:/jogador";
     }
     
-    @GetMapping("/{id}")
+    @GetMapping("/visualizar/{id}")
     public String visualiza(@PathVariable Long id, Model model){
         Jogador jogador = repository.findById(id);
         model.addAttribute("jogador", jogador);

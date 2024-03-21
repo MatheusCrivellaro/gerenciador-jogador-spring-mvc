@@ -12,11 +12,11 @@ import br.com.fiap.repository.JogadorRepository;
 public class JogadorService {
 	
 	public static void mock(JogadorRepository repository) {
-		repository.save(new Jogador(1, "Matheus", Posicao.ATACANTE, Time.ATHLETICOPR, 177, Dominante.DIREITO, LocalDate.now().toString()));
-		repository.save(new Jogador(2, "Gabriel", Posicao.GOLEIRO, Time.BAHIA, 180, Dominante.DIREITO, LocalDate.now().toString()));
-		repository.save(new Jogador(3, "Carol", Posicao.MEIA, Time.BRAGANTINO, 165, Dominante.ESQUERDO, LocalDate.now().toString()));
-		repository.save(new Jogador(4, "Lucas", Posicao.ZAGUEIRO, Time.CRUZEIRO, 175, Dominante.DIREITO, LocalDate.now().toString()));
-		repository.save(new Jogador(5, "Ana Luisa", Posicao.ATACANTE, Time.FLUMINENSE, 170, Dominante.ESQUERDO, LocalDate.now().toString()));
+		repository.save(new Jogador(1, "Matheus", Posicao.ATACANTE, Time.ATHLETICOPR, 177.0, Dominante.DIREITO, LocalDate.now().toString()));
+		repository.save(new Jogador(2, "Gabriel", Posicao.GOLEIRO, Time.BAHIA, 180.0, Dominante.DIREITO, LocalDate.now().toString()));
+		repository.save(new Jogador(3, "Carol", Posicao.MEIA, Time.BRAGANTINO, 165.0, Dominante.ESQUERDO, LocalDate.now().toString()));
+		repository.save(new Jogador(4, "Lucas", Posicao.ZAGUEIRO, Time.CRUZEIRO, 175.0, Dominante.DIREITO, LocalDate.now().toString()));
+		repository.save(new Jogador(5, "Ana Luisa", Posicao.ATACANTE, Time.FLUMINENSE, 170.0, Dominante.ESQUERDO, LocalDate.now().toString()));
 	}
 	
 	public static String dataFormatter(String data) {

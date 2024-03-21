@@ -3,9 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Jogadores - Cadastro</title>
 
@@ -76,7 +77,7 @@
 					</div>
 					<div class="input-group mb-3">
 						<span
-							class="input-group-text bg-secondary-form-control text-light">Número:</span>
+							class="input-group-text bg-secondary-form-control text-light">NÃºmero:</span>
 						<input type="number" class="form-control" name="numero">
 					</div>
 					<div class="input-group mb-3">
@@ -91,7 +92,7 @@
 					</div>
 					<div class="input-group mb-3">
 						<span
-							class="input-group-text bg-secondary-form-control text-light">Pé
+							class="input-group-text bg-secondary-form-control text-light">PÃ©
 							dominante:</span>
 						<div
 							class="d-flex align-items-center ps-3 border border-white form-control ">
@@ -121,7 +122,7 @@
 
 					<div class="input-group mb-3">
 						<span
-							class="input-group-text bg-secondary-form-control text-light">Posição:</span>
+							class="input-group-text bg-secondary-form-control text-light">PosiÃ§Ã£o:</span>
 						<select class="form-select" aria-label="Default select example"
 							name="posicao" id="posicao" placeholder="${jogador.time.nome}">
 							<c:forEach items="${posicoes}" var="posicao">
